@@ -2,10 +2,6 @@
 
 Base desktop application code with Tauri, Native Web Components, and SurrealDB (follow the VMES app architecture)
 
-**See [awesomeapp.org](https://awesomeapp.org) for more info**
-
-**[Discord Awesome App](https://discord.gg/XuKWrNGKpC) for any questions, issues, or anything else**
-
 > Note: To enable persitent storage, edit the `src-tauri/Cargo.toml` to enable all `surrealdb` features. 
 
 # Hot Reload dev
@@ -33,15 +29,15 @@ We recommend using `awesome-app dev` but running each command manually might hel
 
 IMPORTANT: Make sure to have **node.js latest of 16** or above. 
 
-- `npm run tauri icon src-tauri/icons/app-icon.png` - This will build the application icons. 
+- `yarn tauri icon src-tauri/icons/app-icon.png` - This will build the application icons. 
 
-- `npm run pcss` - This will build the postcss files (`src-ui/pcss/**/*.pcss`).
+- `yarn pcss` - This will build the postcss files (`src-ui/pcss/**/*.pcss`).
 
-- `npm run rollup` - This will build and package the typescript files (`src-ui/src/**/*.ts`).
+- `yarn rollup` - This will build and package the typescript files (`src-ui/src/**/*.ts`).
 
-- `npm run localhost` - This will run a localhost server with the `dist/` folder as root (frontend hot reload)
+- `yarn localhost` - This will run a localhost server with the `dist/` folder as root (frontend hot reload)
 
-- In another terminal, `npm run tauri dev` - Will start the Tauri build and start the process.
+- In another terminal, `yarn tauri dev` - Will start the Tauri build and start the process.
 
 <br />
 
@@ -49,7 +45,7 @@ IMPORTANT: Make sure to have **node.js latest of 16** or above.
 
 - Make sure to have **node.js 18** or above.
 - If some cryptic errors, run the command above one by one. 
-- If `npm tauri dev` commands fail, try to do:
+- If `yarn tauri dev` commands fail, try to do:
   - `cd src-tauri`
   - `cargo build` 
   - This might be an important first step when using full surrealdb (i.e., with default features and not only kv-mem) 
